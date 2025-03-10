@@ -16,6 +16,39 @@ class Reserva {
         this.numPessoas = numPessoas;
     }
 
+    // Métodos Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public int getNumPessoas() {
+        return numPessoas;
+    }
+
+    public void setNumPessoas(int numPessoas) {
+        this.numPessoas = numPessoas;
+    }
+
     // Método para exibir a reserva
     public void exibirReserva() {
         System.out.println("Nome: " + nome + " | Data: " + data + " | Horário: " + horario + " | Pessoas: " + numPessoas);
@@ -23,7 +56,7 @@ class Reserva {
 }
 
 // Classe principal do sistema
-class RestauranteReservas {
+class Main {
     private static ArrayList<Reserva> reservas = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
